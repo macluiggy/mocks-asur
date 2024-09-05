@@ -2,50 +2,18 @@ import { Router } from "express";
 import {
   detalleActividadEconomica,
   subActividadEconomicas,
-} from "./common/CatalogoResponses";
+  catalogoDuenoCorreoPnFormsWeb,
+  optionsTipoDocumentoFormsWeb,
+} from "./common/catalogo-responses";
 
 const catalogoRouter = Router();
 
 catalogoRouter.get("/options/tipo-documento/forms/WEB", (req, res) => {
-  res.json([
-    {
-      label: "Cédula",
-      "label-En": "Identification card",
-      "label-Es": "Cédula",
-      value: "cedula",
-    },
-    {
-      label: "RUC",
-      "label-En": "RUC",
-      "label-Es": "RUC",
-      value: "ruc",
-    },
-    {
-      label: "Pasaporte",
-      "label-En": "Passport",
-      "label-Es": "Pasaporte",
-      value: "pasaporte",
-    },
-  ]);
+  res.json(optionsTipoDocumentoFormsWeb);
 });
 
 catalogoRouter.get("/catalogo-dueno-correo-pn/forms/WEB", (req, res) => {
-  res.json([
-    {
-      label: "CONYUGE",
-      "label-En": "CONYUGE",
-      "label-Es": "CONYUGE",
-      value: "SPOUSE",
-      numeric: "2",
-    },
-    {
-      label: "SOLICITANTE DE LA POLIZA",
-      "label-En": "SOLICITANTE DE LA POLIZA",
-      "label-Es": "SOLICITANTE DE LA POLIZA",
-      value: "POLICY APPLICANT",
-      numeric: "1",
-    },
-  ]);
+  res.json(catalogoDuenoCorreoPnFormsWeb);
 });
 
 catalogoRouter.get("/list/nacionalidad/forms/WEB", (req, res) => {
