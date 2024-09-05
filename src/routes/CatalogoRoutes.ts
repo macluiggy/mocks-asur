@@ -8990,6 +8990,57 @@ catalogoRouter.get("/list/provincias/forms/WEB", (req, res) => {
     },
   ]);
 });
+catalogoRouter.get("/options/tipo-persona/forms/WEB", (req, res) => {
+  res.json([
+    {
+      label: "Natural",
+      "label-En": "Natural",
+      "label-Es": "Natural",
+      value: "natural",
+    },
+    {
+      label: "Jurídica",
+      "label-En": "Legal",
+      "label-Es": "Jurídica",
+      value: "juridica",
+    },
+  ]);
+});
+catalogoRouter.get("/empresa/languages/forms/WEB", (req, res) => {
+  res.json([
+    {
+      label: "Español",
+      value: "es",
+      labelEn: "Spanish",
+    },
+    {
+      label: "Inglés",
+      value: "en",
+      labelEn: "English",
+    },
+  ]);
+});
+catalogoRouter.get("change-this", (req, res) => {
+  res.json();
+});
+catalogoRouter.get("change-this", (req, res) => {
+  res.json();
+});
+catalogoRouter.get("change-this", (req, res) => {
+  res.json();
+});
+catalogoRouter.get("change-this", (req, res) => {
+  res.json();
+});
+catalogoRouter.get("change-this", (req, res) => {
+  res.json();
+});
+catalogoRouter.get("change-this", (req, res) => {
+  res.json();
+});
+catalogoRouter.get("change-this", (req, res) => {
+  res.json();
+});
 catalogoRouter.get("change-this", (req, res) => {
   res.json();
 });
