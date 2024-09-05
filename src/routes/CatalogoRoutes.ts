@@ -1,5 +1,8 @@
 import { Router } from "express";
-import { subActividadEconomicas } from "./common/CatalogoResponses";
+import {
+  detalleActividadEconomica,
+  subActividadEconomicas,
+} from "./common/CatalogoResponses";
 
 const catalogoRouter = Router();
 
@@ -20560,12 +20563,17 @@ catalogoRouter.get(
   "/sub-actividad-economica/:subActividad/forms/WEB",
   (req, res) => {
     const { subActividad } = req.params;
-    res.json(subActividadEconomicas[subActividad] || []);
+    res.json(subActividadEconomicas[subActividad]);
   }
 );
-catalogoRouter.get("change-this", (req, res) => {
-  res.json();
-});
+catalogoRouter.get(
+  "/detalle-actividad-economica/:detalleActividad/forms/WEB",
+  (req, res) => {
+    const { detalleActividad } = req.params;
+
+    res.json(detalleActividadEconomica[detalleActividad] || []);
+  }
+);
 catalogoRouter.get("change-this", (req, res) => {
   res.json();
 });
