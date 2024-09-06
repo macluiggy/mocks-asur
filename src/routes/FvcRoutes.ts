@@ -77,11 +77,5 @@ FvcRoutes.get("change-this", (req, res) => {
 FvcRoutes.get("change-this", (req, res) => {
   res.json();
 });
-FvcRoutes.get("change-this", (req, res) => {
-  res.json();
-});
-FvcRoutes.get("change-this", (req, res) => {
-  res.json();
-});
 
 export default FvcRoutes;
