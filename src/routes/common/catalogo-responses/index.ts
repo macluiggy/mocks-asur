@@ -14,6 +14,9 @@ import { optionsTipoPersonaFormsWeb } from "./options-tipo-persona-forms-web";
 import { empresaLanguagesFormsWeb } from "./empresa-languages-forms-web";
 import { optionsBrokersFormsWeb } from "./options-brokers-forms-web";
 import { actividadEconomicaFormsWeb } from "./actividad-economica-forms-web";
+import { listRamoFormsWeb } from "./list-ramo-forms-web";
+import { canalCanalVinculacionFormsWeb } from "./canal-canal-vinculacion-forms-web";
+import { listFormaPagoPrimaFormsWeb } from "./list-forma-pago-prima-forms-web";
 
 export {
   subActividadEconomicas,
@@ -30,4 +33,7 @@ export {
   empresaLanguagesFormsWeb,
   optionsBrokersFormsWeb,
   actividadEconomicaFormsWeb,
+  listRamoFormsWeb,
+  canalCanalVinculacionFormsWeb,
+  listFormaPagoPrimaFormsWeb,
 };

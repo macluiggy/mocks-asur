@@ -4,6 +4,7 @@ import Paths from '../common/Paths';
 import UserRoutes from './UserRoutes';
 import catalogoRouter from './CatalogoRoutes';
 import FvcRoutes from './FvcRoutes';
+import appRoutes from './AppRoutes';
 
 
 // **** Variables **** //
@@ -27,6 +28,9 @@ apiRouter.use('/catalogo', catalogoRouter);
 
 // Add UserRouter
 apiRouter.use('/fvc', FvcRoutes);
+
+// Add AppRouter
+apiRouter.use('/app', appRoutes);
 
 // Add UserRouter
 apiRouter.use(Paths.Users.Base, userRouter);

@@ -14,6 +14,9 @@ import {
   empresaLanguagesFormsWeb,
   optionsBrokersFormsWeb,
   actividadEconomicaFormsWeb,
+  listRamoFormsWeb,
+  canalCanalVinculacionFormsWeb,
+  listFormaPagoPrimaFormsWeb,
 } from "./common/catalogo-responses";
 
 const catalogoRouter = Router();
@@ -74,6 +77,18 @@ catalogoRouter.get(
     res.json(detalleActividadEconomica[detalleActividad] || []);
   }
 );
+catalogoRouter.get("/list/ramo/forms/WEB", (req, res) => {
+  res.json(listRamoFormsWeb);
+});
+catalogoRouter.get("/canal/canal-vinculacion/forms/WEB", (req, res) => {
+  res.json(canalCanalVinculacionFormsWeb);
+});
+catalogoRouter.get("/list/forma-pago-prima/forms/WEB", (req, res) => {
+  res.json(listFormaPagoPrimaFormsWeb);
+});
+catalogoRouter.get("change-this", (req, res) => {
+  res.json();
+});
 catalogoRouter.get("change-this", (req, res) => {
   res.json();
 });
