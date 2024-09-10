@@ -18,55 +18,56 @@ import {
   canalCanalVinculacionFormsWeb,
   listFormaPagoPrimaFormsWeb,
 } from "./common/catalogo-responses";
+import { responseHandler } from "@src/util/misc";
 
 const catalogoRouter = Router();
 
 catalogoRouter.get("/options/tipo-documento/forms/WEB", (req, res) => {
-  res.json(optionsTipoDocumentoFormsWeb);
+  responseHandler(res, optionsTipoDocumentoFormsWeb);
 });
 
 catalogoRouter.get("/catalogo-dueno-correo-pn/forms/WEB", (req, res) => {
-  res.json(catalogoDuenoCorreoPnFormsWeb);
+  responseHandler(res, catalogoDuenoCorreoPnFormsWeb);
 });
 
 catalogoRouter.get("/list/nacionalidad/forms/WEB", (req, res) => {
-  res.json(listNacionalidadFormsWeb);
+  responseHandler(res, listNacionalidadFormsWeb);
 });
 
 catalogoRouter.get("/list/genero/forms/WEB", (req, res) => {
-  res.json(listGeneroFormsWeb);
+  responseHandler(res, listGeneroFormsWeb);
 });
 
 catalogoRouter.get("/list/estado-civil/forms/WEB", (req, res) => {
-  res.json(listEstadoCivilFormsWeb);
+  responseHandler(res, listEstadoCivilFormsWeb);
 });
 
 catalogoRouter.get("/list/profesion/forms/WEB", (req, res) => {
-  res.json(listProfesionFormsWeb);
+  responseHandler(res, listProfesionFormsWeb);
 });
 catalogoRouter.get("/list/canton/forms/WEB", (req, res) => {
-  res.json(listCantonFormsWeb);
+  responseHandler(res, listCantonFormsWeb);
 });
 catalogoRouter.get("/list/provincias/forms/WEB", (req, res) => {
-  res.json(listProviciasFormsWeb);
+  responseHandler(res, listProviciasFormsWeb);
 });
 catalogoRouter.get("/options/tipo-persona/forms/WEB", (req, res) => {
-  res.json(optionsTipoPersonaFormsWeb);
+  responseHandler(res, optionsTipoPersonaFormsWeb);
 });
 catalogoRouter.get("/empresa/languages/forms/WEB", (req, res) => {
-  res.json(empresaLanguagesFormsWeb);
+  responseHandler(res, empresaLanguagesFormsWeb);
 });
 catalogoRouter.get("/options/brokers/forms/WEB", (req, res) => {
-  res.json(optionsBrokersFormsWeb);
+  responseHandler(res, optionsBrokersFormsWeb);
 });
 catalogoRouter.get("/actividad-economica/forms/WEB", (req, res) => {
-  res.json(actividadEconomicaFormsWeb);
+  responseHandler(res, actividadEconomicaFormsWeb);
 });
 catalogoRouter.get(
   "/sub-actividad-economica/:subActividad/forms/WEB",
   (req, res) => {
     const { subActividad } = req.params;
-    res.json(subActividadEconomicas[subActividad]);
+    responseHandler(res, subActividadEconomicas[subActividad]);
   }
 );
 catalogoRouter.get(
@@ -74,28 +75,19 @@ catalogoRouter.get(
   (req, res) => {
     const { detalleActividad } = req.params;
 
-    res.json(detalleActividadEconomica[detalleActividad] || []);
+    responseHandler(res, detalleActividadEconomica[detalleActividad] || []);
   }
 );
 catalogoRouter.get("/list/ramo/forms/WEB", (req, res) => {
-  res.json(listRamoFormsWeb);
+  responseHandler(res, listRamoFormsWeb);
 });
 catalogoRouter.get("/canal/canal-vinculacion/forms/WEB", (req, res) => {
-  res.json(canalCanalVinculacionFormsWeb);
+  responseHandler(res, canalCanalVinculacionFormsWeb);
 });
 catalogoRouter.get("/list/forma-pago-prima/forms/WEB", (req, res) => {
-  res.json(listFormaPagoPrimaFormsWeb);
+  responseHandler(res, listFormaPagoPrimaFormsWeb);
 });
-catalogoRouter.get("change-this", (req, res) => {
-  res.json();
-});
-catalogoRouter.get("change-this", (req, res) => {
-  res.json();
-});
-catalogoRouter.get("change-this", (req, res) => {
-  res.json();
-});
-catalogoRouter.get("change-this", (req, res) => {
-  res.json();
-});
+// catalogoRouter.get("change-this", (req, res) => {
+//   responseHandler(res, );
+// });
 export default catalogoRouter;

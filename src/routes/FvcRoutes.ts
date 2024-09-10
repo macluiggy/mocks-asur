@@ -1,3 +1,4 @@
+import { responseHandler } from "@src/util/misc";
 import { Router } from "express";
 
 const FvcRoutes = Router();
@@ -7,7 +8,7 @@ FvcRoutes.get("/", (req, res) => {
 });
 
 FvcRoutes.post("/save/forms/WEB", (req, res) => {
-  res.json({
+  responseHandler(res, {
     id: "66da026ad62968aa840b324a",
     lastSection: "idioma",
     sections: {
@@ -41,7 +42,7 @@ FvcRoutes.post("/save/forms/WEB", (req, res) => {
   });
 });
 FvcRoutes.get("/completed/66db0f5b16529634dd077968/forms/WEB", (req, res) => {
-  res.json({
+  responseHandler(res, {
     fv: {
       codigo: "formulario-vinculacion",
       to: "vg.victorguillen20@gmail.com",
@@ -71,11 +72,8 @@ FvcRoutes.get("/completed/66db0f5b16529634dd077968/forms/WEB", (req, res) => {
     },
   });
 });
-FvcRoutes.get("change-this", (req, res) => {
-  res.json();
-});
-FvcRoutes.get("change-this", (req, res) => {
-  res.json();
-});
+// FvcRoutes.get("change-this", (req, res) => {
+//   responseHandler(res);
+// });
 
 export default FvcRoutes;
