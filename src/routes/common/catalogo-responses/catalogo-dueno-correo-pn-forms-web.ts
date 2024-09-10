@@ -1,22 +1,18 @@
 const catalogoDuenoCorreoPnFormsWeb = [
   {
-    label: "Cédula",
-    "label-En": "Identification card",
-    "label-Es": "Cédula",
-    value: "cedula",
+    label: "CONYUGE",
+    "label-En": "CONYUGE",
+    "label-Es": "CONYUGE",
+    value: "SPOUSE",
+    numeric: "2",
   },
   {
-    label: "RUC",
-    "label-En": "RUC",
-    "label-Es": "RUC",
-    value: "ruc",
+    label: "SOLICITANTE DE LA POLIZA",
+    "label-En": "SOLICITANTE DE LA POLIZA",
+    "label-Es": "SOLICITANTE DE LA POLIZA",
+    value: "POLICY APPLICANT",
+    numeric: "1",
   },
-  {
-    label: "Pasaporte",
-    "label-En": "Passport",
-    "label-Es": "Pasaporte",
-    value: "pasaporte",
-  },
-]
+];
 
 export { catalogoDuenoCorreoPnFormsWeb };
