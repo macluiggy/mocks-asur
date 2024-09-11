@@ -17,6 +17,7 @@ import {
   listRamoFormsWeb,
   canalCanalVinculacionFormsWeb,
   listFormaPagoPrimaFormsWeb,
+  listRelacionFormsWeb,
 } from "./common/catalogo-responses";
 import { responseHandler } from "@src/util/misc";
 
@@ -86,6 +87,10 @@ catalogoRouter.get("/canal/canal-vinculacion/forms/WEB", (req, res) => {
 });
 catalogoRouter.get("/list/forma-pago-prima/forms/WEB", (req, res) => {
   responseHandler(res, listFormaPagoPrimaFormsWeb);
+});
+
+catalogoRouter.get("/list/relacion/forms/WEB", (req, res) => {
+  responseHandler(res, listRelacionFormsWeb);
 });
 // catalogoRouter.get("change-this", (req, res) => {
 //   responseHandler(res, );

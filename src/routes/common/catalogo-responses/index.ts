@@ -17,6 +17,7 @@ import { actividadEconomicaFormsWeb } from "./actividad-economica-forms-web";
 import { listRamoFormsWeb } from "./list-ramo-forms-web";
 import { canalCanalVinculacionFormsWeb } from "./canal-canal-vinculacion-forms-web";
 import { listFormaPagoPrimaFormsWeb } from "./list-forma-pago-prima-forms-web";
+import listRelacionFormsWeb from "./list-relacion-forms-web";
 
 export {
   subActividadEconomicas,
@@ -36,4 +37,5 @@ export {
   listRamoFormsWeb,
   canalCanalVinculacionFormsWeb,
   listFormaPagoPrimaFormsWeb,
+  listRelacionFormsWeb,
 };
