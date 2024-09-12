@@ -19,6 +19,7 @@ import {
   listFormaPagoPrimaFormsWeb,
   listRelacionFormsWeb,
   nivelJerarquicoFormsWeb,
+  listParentescoFormsWeb,
 } from "./common/catalogo-responses";
 import { responseHandler } from "@src/util/misc";
 
@@ -96,6 +97,11 @@ catalogoRouter.get("/list/relacion/forms/WEB", (req, res) => {
 catalogoRouter.get("/list/nivel-jerarquico/forms/WEB", (req, res) => {
   responseHandler(res, nivelJerarquicoFormsWeb);
 });
+
+catalogoRouter.get("/list/parentesco/forms/WEB", (req, res) => {
+  responseHandler(res, listParentescoFormsWeb);
+}
+);
 // catalogoRouter.get("change-this", (req, res) => {
 //   responseHandler(res, );
 // });
