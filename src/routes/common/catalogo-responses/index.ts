@@ -18,6 +18,7 @@ import { listRamoFormsWeb } from "./list-ramo-forms-web";
 import { canalCanalVinculacionFormsWeb } from "./canal-canal-vinculacion-forms-web";
 import { listFormaPagoPrimaFormsWeb } from "./list-forma-pago-prima-forms-web";
 import listRelacionFormsWeb from "./list-relacion-forms-web";
+import nivelJerarquicoFormsWeb from "./list-nivel-jerarquico-forms-web";
 
 export {
   subActividadEconomicas,
@@ -38,4 +39,5 @@ export {
   canalCanalVinculacionFormsWeb,
   listFormaPagoPrimaFormsWeb,
   listRelacionFormsWeb,
+  nivelJerarquicoFormsWeb,
 };

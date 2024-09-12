@@ -18,6 +18,7 @@ import {
   canalCanalVinculacionFormsWeb,
   listFormaPagoPrimaFormsWeb,
   listRelacionFormsWeb,
+  nivelJerarquicoFormsWeb,
 } from "./common/catalogo-responses";
 import { responseHandler } from "@src/util/misc";
 
@@ -91,6 +92,9 @@ catalogoRouter.get("/list/forma-pago-prima/forms/WEB", (req, res) => {
 
 catalogoRouter.get("/list/relacion/forms/WEB", (req, res) => {
   responseHandler(res, listRelacionFormsWeb);
+});
+catalogoRouter.get("/list/nivel-jerarquico/forms/WEB", (req, res) => {
+  responseHandler(res, nivelJerarquicoFormsWeb);
 });
 // catalogoRouter.get("change-this", (req, res) => {
 //   responseHandler(res, );
